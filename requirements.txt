@@ -1,6 +1,6 @@
 boto3==1.7.10
 botocore==1.10.10
-Django==2.0.4
+Django==1.11.12
 docutils==0.14
 jmespath==0.9.3
 mock==2.0.0
