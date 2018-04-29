@@ -1,6 +1,5 @@
-=====
-Django SNS Mobile Push Notifications
-=====
+# Django SNS Mobile Push Notifications
+
 
 Send mobile push notification to IOS and android devices using Amazon SNS.
 
