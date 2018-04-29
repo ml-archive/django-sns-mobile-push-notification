@@ -1,0 +1,6 @@
+site_name: django-sns-mobile-push-notification
+site_url: https://github.com/fuzz-productions/django-sns-mobile-push-notification
+site_author: Ramtin Vaziri @pythonicrubyist
+pages:
+- [index.md, Getting Started]
+theme: readthedocs
