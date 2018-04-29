@@ -24,9 +24,10 @@ INSTALLED_APPS = (
 ## Required Settings
 
 Login to AWS's SNS Dashboard and manually create 2 platform applications. One for IOS, and one for Android.
+
 | Name | Description |
 |------|-------------|
-| ``AWS_ACCESS_KEY_ID`` | Access key of your AWS user*. |
+| ``AWS_ACCESS_KEY_ID`` | Access key of your AWS user. |
 | ``AWS_SECRET_ACCESS_KEY`` | Secret key of your AWS user. |
 | ``AWS_SNS_REGION_NAME`` | The region your SNS application is located in. |
 | ``IOS_PLATFORM_APPLICATION_ARN`` | ARN for IOS platform application. |
