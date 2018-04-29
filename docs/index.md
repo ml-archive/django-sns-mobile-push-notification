@@ -46,7 +46,7 @@ device.os = Device.IOS_OS
 device.save()
 
 # By registering a device, the token will be sent to SNS and SNS will return an ARN key which will be saved in the device object.
-# Arn is required to send future push notification to SNS, regardless of the device type.
+# ARN is required to send future push notification to SNS, regardless of the device type.
 register_device(device)
 device.refresh_from_db()
 print(device.arn)
@@ -55,13 +55,14 @@ print(device.arn)
 refresh_device(device)
 
 # Now you can send teh push notification to the the registered device.
-send_sns_mobile_push_notification_to_device(
-    device=device,
-    notification_type="type",
-    text="text",
-    data={"a": "b"},
-    title="title"
-)
+if device.active and device.arn:
+    send_sns_mobile_push_notification_to_device(
+        device=device,
+        notification_type="type",
+        text="text",
+        data={"a": "b"},
+        title="title"
+    )
 
 # remove a device from SNS.
 deregister_device(device)
