@@ -36,7 +36,7 @@ Login to AWS's SNS Dashboard and manually create 2 platform applications. One fo
 
 ## Usage
 ```python
-from sns_mobile_push_notification import Device
+from sns_mobile_push_notification.models import Device
 from sns_mobile_push_notification.tasks import register_device, refresh_device, send_sns_mobile_push_notification_to_device, deregister_device
 
 # Given a valid token from Google's FCM(GCM), or Apple's APNs, create a device object.
