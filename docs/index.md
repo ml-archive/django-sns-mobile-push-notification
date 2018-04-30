@@ -55,7 +55,7 @@ print(device.arn)
 # You can refresh the device to make sure it is enabled and ready to use.
 refresh_device(device)
 
-# Now you can send teh push notification to the the registered device.
+# Now you can send the push notification to the the registered device.
 if device.active and device.arn:
     send_sns_mobile_push_notification_to_device(
         device=device,
